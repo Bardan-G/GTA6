@@ -23,7 +23,7 @@
   
 ## 🌐 Live Demo
 
-Check out the live version here: [View on Vercel](https://your-vercel-link.vercel.app)
+Check out the live version here: [View on Vercel](https://vercel.com/bardan-g-neupanes-projects/gta-6)
 
 
 </div>
