@@ -10,12 +10,12 @@ const App = () => {
     tl.to(".vi-mask-group", {
       rotate: 10,
       duration: 2,
-      ease: "power4.inOut",
+      ease: "power3.inOut",
       transformOrigin: "50% 50%",
     }).to(".vi-mask-group", {
       scale: 10,
       duration: 2,
-      delay: -1.8,
+      delay: -1.9,
       ease: "expo.inOut",
       transformOrigin: "50% 50%",
       opacity: 0,
@@ -59,12 +59,17 @@ const App = () => {
       duration: 2,
       delay: "-.8",
       ease: "Expo.easeInOut",
-    })
+    });
+    // gsap.to(".downloadd",{
+    //   delay:1,
+    //   duration:1,
+      
+    //   ease:'power2.inOut'
+    // })
     
-    ;
     const main = document.querySelector(".main");
     main?.addEventListener("mousemove", function (e) {
-      const xMove = (e.clientX / window.innerWidth - 0.5) * 40;
+      const xMove = (e.clientX / window.innerWidth - 0.4) * 70;
       gsap.to(".main .text", {
         x: `${xMove * 0.4}%`,
       }),
@@ -99,7 +104,7 @@ const App = () => {
             </mask>
           </defs>
           <image
-            href="../public/assets/bg (1).png"
+            href="/assets/bg (1).png"
             width="100%"
             height="100%"
             preserveAspectRatio="xMidYMid slice"
@@ -125,12 +130,12 @@ const App = () => {
             <div className=" imagesdiv relative w-full h-screen overflow-hidden ">
               <img
                 className=" absolute sky scale-[1.5] rotate-[-20deg] top-0 left-0 w-full h-full object-cover"
-                src="../public/assets/sky.png"
+                src="/assets/sky.png"
                 alt=""
               />
               <img
                 className=" absolute bg scale-[1.8]  rotate-[-3deg] top-0 left-0 w-full h-full object-cover"
-                src="../public/assets/bg (1).png"
+                src="/assets/bg (1).png"
                 alt=""
               />
               <div className="text  text-white flex flex-col gap-3 absolute top-10 left-1/2 -translate-x-1/2  ">
@@ -140,7 +145,7 @@ const App = () => {
               </div>
               <img
                 className="absolute girl -bottom-[50%]  left-1/2 -translate-x-1/2 scale-[.2] rotate-[10deg]   "
-                src="../public/assets/girlbg.png"
+                src="/assets/girlbg.png"
                 alt=""
               />
             </div>
@@ -154,9 +159,10 @@ const App = () => {
               </div>
               <img
                 className="absolute h-[35px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                src="../public/assets/ps5.png"
+                src="/assets/ps5.png"
                 alt=""
               />
+              <img className="absolute h-[80px] top-1/2 right-1/11 -translate-x-1/2 -translate-y-1/2 " src="../public/assets/logo18.png" alt="" />
             </div>
           </div>
           <div className="w-full text-white h-screen flex items-center justify-center bg-black">
@@ -164,7 +170,7 @@ const App = () => {
               <div className="limg relative w-1/2 h-full">
                 <img
                   className="absolute left-1/2 top-1/2 scale-[1.1] -translate-x-1/2 -translate-y-1/2 "
-                  src="../public/assets/imag.png"
+                  src="/assets/imag.png"
                   alt=""
                 />
               </div>
@@ -188,7 +194,7 @@ const App = () => {
                 soluta tenetur illo repellat consectetur laborum eveniet eaque,
                 dicta, hic quisquam? Ex cupiditate ipsa nostrum autem sapiente.
               </p>
-              <button className="bg-yellow-500 px-10 py-10 text-black mt-10 text-4xl">
+              <button className="downloadd bg-yellow-500 px-10 py-10 text-[#7240c2] mt-10 text-4xl crusor-pointer  ">
                 Download Now
               </button>
             </div>
